@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navegacion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  position: fixed;
+  background-color: white;
+}
+
+.logo img{
+  max-width: 100px;
+  max-height: 150px;
+  margin-left: 50px;
+}
+
+.links{
+  margin-right: 50px;
+}
+
+.links a{
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.links a:hover{
+  color: red;
+}
