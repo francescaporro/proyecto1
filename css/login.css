@@ -21,3 +21,11 @@ body {
   font-style: oblique;
 
 }
+
+input:hover{
+  border: 2px red;
+}
+
+input:focus{
+  border: 2px blue;
+}
