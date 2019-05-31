@@ -1,55 +1,111 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="../css/login.css">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>FORMS</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/barraDeNavegacion.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
   </head>
-  <body>
+  <body class="Body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img src="logo.jpeg" width="150" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Generos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="generos.html">Terror</a>
+                <a class="dropdown-item" href="generos.html">Comedia</a>
+                <a class="dropdown-item" href="generos.html">Drama</a>
+                <a class="dropdown-item" href="generos.html">Accion<a>
+                    <a class="dropdown-item" href="generos.html">Aventura<a>
+                      <a class="dropdown-item" href="generos.html">Crimen<a>
+                          <a class="dropdown-item" href="generos.html">Otros<a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/home.js" charset="utf-8"></script>
+    <div class="form">
+
+    <h1 class="titulo"> <b> Log In  </b> </h1>
+    <h2 class="subt" >Por favor complete todos los campos</h2>
+
+
+
 <form class="" action="index.html" method="post">
   <p>
-<label for="nombre">Nombre:</label>
+<label for="nombre">Nombre y Apellido:</label>
 <input id="nombre"type="text" name="nombre" value="" required>
   </p>
 <p>
 <label for="mail">Mail</label>
 <input id="mail"type="email" name="email" value=""required>
 </p>
-<p>
-<label for="pass">Contraseña</label>
-<input id="pass" type="password" name="password" value="">
-</p>
-<p>
-<label for="">Materias cursadas</label><br>
-<input type="checkbox" name="materias" value="prg1">Programacion 1<br>
-<input type="checkbox" name="materias" value="intro">Intro Digital<br>
-<input type="checkbox" name="materias" value="mat">Matematica i<br>
-<input type="checkbox" name="materias" value="econ">Economia<br>
-</p>
+
 <p>
 <label for="">Genero</label><br>
 <input type="radio" name="genero" value="M">Masculino<br>
 <input type="radio" name="genero" value="F">Femenino<br>
-<input type="radio" name="genero" value="O">Otre<br>
+<input type="radio" name="genero" value="O">Indefinido<br>
 </p>
-<p>
-<label for="">Comentarios:</label><br>
-<textarea name="comentarios" rows="8" cols="80"></textarea>
-</p>
-<p>
-  <label for="pais">Pais</label>
-<select class="" name="pais"><br>
-  <option value="ARG">Argentina</option><br>
-  <option value="ING">Inglaterra</option><br>
-  <option value="USA">U.S.A</option><br>
-  <option value="CHI">China</option><br>
-</select>
-</p>
+
 <p>
 <button type="submit" name="button">
-Envia Logi
+Enviar Login
 </button>
 </p>
 </form>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+  </div>
   </body>
+
 </html>
