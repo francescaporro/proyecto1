@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="../css/home.css">
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FORMS</title>
   </head>
   <body>
+<form class="" action="index.html" method="post">
+  <p>
+<label for="nombre">Nombre:</label>
+<input id="nombre"type="text" name="nombre" value="" required>
+  </p>
 <p>
-
+<label for="mail">Mail</label>
+<input id="mail"type="email" name="email" value=""required>
 </p>
+<p>
+<label for="pass">Contraseña</label>
+<input id="pass" type="password" name="password" value="">
+</p>
+<p>
+<label for="">Materias cursadas</label><br>
+<input type="checkbox" name="materias" value="prg1">Programacion 1<br>
+<input type="checkbox" name="materias" value="intro">Intro Digital<br>
+<input type="checkbox" name="materias" value="mat">Matematica i<br>
+<input type="checkbox" name="materias" value="econ">Economia<br>
+</p>
+<p>
+<label for="">Genero</label><br>
+<input type="radio" name="genero" value="M">Masculino<br>
+<input type="radio" name="genero" value="F">Femenino<br>
+<input type="radio" name="genero" value="O">Otre<br>
+</p>
+<p>
+<label for="">Comentarios:</label><br>
+<textarea name="comentarios" rows="8" cols="80"></textarea>
+</p>
+<p>
+  <label for="pais">Pais</label>
+<select class="" name="pais"><br>
+  <option value="ARG">Argentina</option><br>
+  <option value="ING">Inglaterra</option><br>
+  <option value="USA">U.S.A</option><br>
+  <option value="CHI">China</option><br>
+</select>
+</p>
+<p>
+<button type="submit" name="button">
+Envia Logi
+</button>
+</p>
+</form>
   </body>
 </html>
