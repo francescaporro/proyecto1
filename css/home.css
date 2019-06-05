@@ -1,14 +1,19 @@
 body {
-  background-color: yellow;
+  background-color: black;
+  color: yellow;
 }
 
 .home{
   background-color: black;
   color: yellow;
 }
-.destacdas {
-  width: 20%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+
+.cartelera{
+  background-color: black;
+  color: yellow;
+}
+
+.proximamente{
+  background-color: black;
+  color: yellow;
 }

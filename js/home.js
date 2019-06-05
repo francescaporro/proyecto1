@@ -6,10 +6,10 @@ window.onload = function() {
     .then(function(informacion) {
       var peliculas = informacion.results
 
-      for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < peliculas.length; i++) {
         console.log(peliculas[i]);
 
-        document.querySelector(".destacdas").innerHTML += '<li> <a href="detalleDeUnaPelicula.html    ">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
+        document.querySelector(".destacdas").innerHTML += '<li> <a href="detalleDeUnaPelicula.html">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
       }
     })
 }
