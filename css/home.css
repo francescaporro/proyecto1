@@ -1,6 +1,8 @@
 body {
   background-color: black;
   color: yellow;
+
+  height:100vh;
 }
 
 .home{
@@ -23,10 +25,16 @@ body {
   color: yellow;
 }
 
-
-
+#destacadas{
+  color: yellow;
+}
+#proximamente{
+    color: yellow;
+}
+#mayorPuntaje{
+    color: yellow;
+}
 /*NO FUNCIONA EL HOME.CSS PQ HAY ALGO QUE LO PISA /*
-/* FRANCESCA PEN /*
 
 Misterio
 Romance
