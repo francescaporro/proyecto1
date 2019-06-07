@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load", function () {
   var url = "https://api.themoviedb.org/3/genre/movie/list?api_key=55e95e0127dd3fb1d9735ac5b1829c94&language=en-US"
   var genurl = "https://api.themoviedb.org/3/discover/movie?api_key=55e95e0127dd3fb1d9735ac5b1829c94&sort_by=popularity.desc&include_adult=true&include_video=true&page=1&with_genres="
   fetch (url)
@@ -29,4 +29,4 @@ window.onload = function () {
    .catch (function (error) {
      console.log("Error" + error);
    })
-}
+})
