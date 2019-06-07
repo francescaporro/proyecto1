@@ -9,21 +9,20 @@ window.onload = function () {
    .then (function (data) {
      console.log(data);
 
-    var ul = document.querySelector("ul.gen");
-    var li = "";
+    var div = document.querySelector("div.dropdown-menu");
+    var a = "";
     var arrayDeGeneros= data.genres
+    console.log(arrayDeGeneros);
     var genero="";
     var id=0;
     for (var i = 0; i < arrayDeGeneros.length; i++) {
       genero = arrayDeGeneros[i].name;
       id= arrayDeGeneros[i].id;
-      li = "<li>"
-      li += '<a href=PeliculasPorgen.html?id=' + id + '&nombre=' + genero + '><p>'+ genero + "</p></a>"
-      li += "</li>"
-      ul.innerHTML+=li
+
+      a = "<a class='dropdown-item' href=genxpeli.html?id=" + id + '&nombre=' + genero + '>'+ genero + "</a>"
+
+      div.innerHTML+=a
     }
-
-
 
    })
 
