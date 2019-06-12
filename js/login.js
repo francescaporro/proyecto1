@@ -1,7 +1,7 @@
 window.addEventListener ("load",function(){
-  var formulario = document.querySelector ("form.uk-flex.uk-flex-column")
-  var nombre = formulario.querySelector ("input[name = 'name']")
-  var mail = formulario.querySelector ("input[name = 'email']")
+  var formulario = document.querySelector(".formularioLogin")
+  var nombre = formulario.querySelector("input[name='nombre']")
+  var mail = formulario.querySelector("input[name = 'email']")
   var validacion= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   formulario.onsubmit = function (event) {

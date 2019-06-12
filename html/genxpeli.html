@@ -23,9 +23,11 @@
               <li class="nav-item active">
                 <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Log In</a>
+              <li class="">
+                <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Log in</button>
+
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Generos
@@ -58,6 +60,27 @@
               </form>
             </div>
             </nav>
+
+                  <div id="modal-example" uk-modal>
+                      <div class="uk-modal-dialog uk-modal-body">
+                          <h2 class="uk-modal-title">LOG IN</h2>
+                          <form class="form.uk-flex.uk-flex-column" action="" method="post">
+                          <input type="text" name="name" value="" placeholder="Nombre">
+                          <input type="text" name="name" value="" placeholder="Contraseña">
+                          <input type="email" name="email" value="" placeholder="Email">
+                          <select class="" name="genero">
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                            <option value="O">Otro</option>
+                          </select>
+                          <p class="uk-text-right">
+                              <button class="uk-button uk-button-default uk-modal-close" type="reset">Cancelar</button>
+                              <button class="uk-button uk-button-primary" type="submit">Enviar</button>
+                          </p>
+                          </form>
+
+                      </div>
+                  </div>
             <!-- ACA TERMINA EL NAV -->
 
             <div id="modal-example" uk-modal>
@@ -83,7 +106,6 @@
             </form>
           </div>
           </div>
-
 
 
 
