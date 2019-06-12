@@ -5,8 +5,11 @@ window.addEventListener ("load",function(){
   var validacion= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   formulario.onsubmit = function (event) {
-    var select= formulario.querySelector ("select")
-    var option= select.options [select.selectIndex]
+    event.preventDefault ()
+    var select= formulario.querySelector("#mySelect")
+    console.log(select);
+    var option= select.options[select.selectedIndex].text
+    console.log(option);
 
     if (nombre.value == "" && mail.value.match (validacion)== null) {
       event.preventDefault ()
@@ -16,13 +19,16 @@ window.addEventListener ("load",function(){
       event.preventDefault ()
       alert ("Complete el nombre")}
     else if (mail.value.match (validacion)==null) {
-    event.preventDefault ()
-    alert ("Complete el e-mail")}
+        event.preventDefault ()
+        alert ("Complete el e-mail")}
      else if (option.value=="") {
-    event.preventDefault ()
-    alert ("Complete el genero")}
+        event.preventDefault ()
+        alert ("Complete el genero")}
     else {
+        
     }
+
+    console.log("ok");
 }
 
 })
