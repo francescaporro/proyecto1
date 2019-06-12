@@ -1,0 +1,18 @@
+.logo {
+
+  position: relative;
+  width: 100px;
+  left: 1300px;
+}
+
+.digitalHouse{
+
+  position: absolute;
+  width: 600px;
+}
+
+#nombres{
+  color: grey;
+  width: 250px
+  height: 80vh;
+}
