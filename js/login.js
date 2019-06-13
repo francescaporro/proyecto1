@@ -5,8 +5,9 @@ window.addEventListener ("load",function(){
   var validacion= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   formulario.onsubmit = function (event) {
-    var select= formulario.querySelector ("select")
-    var option= select.options [select.selectIndex]
+    event.preventDefault()
+    var select= formulario.querySelector("#mySelect")
+    var option= select.options[select.selectedIndex]
 
     if (nombre.value == "" && mail.value.match (validacion)== null) {
       event.preventDefault ()
@@ -20,11 +21,18 @@ window.addEventListener ("load",function(){
     alert ("Complete el e-mail")}
      else if (option.value=="") {
     event.preventDefault ()
-    alert ("Complete el genero")}
-    else {
-        localStorage.setItem(nombre);
+    alert ("Complete el genero")
+  }else {
 
-        getElementById("voton").style.display="none"
+    localStorage.setItem("nombre", nombre.value);
 }
+}
+var usuario = localStorage.getItem("nombre")
+console.log(usuario);
+if (usuario != null) {
+  document.getElementById("voton").style.display="none"
+  document.getElementById("item-usuario").innerHTML = "<p>"+usuario+"</p>"
+}
+
 
 })
