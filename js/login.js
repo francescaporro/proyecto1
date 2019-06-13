@@ -25,7 +25,8 @@ window.addEventListener ("load",function(){
         event.preventDefault ()
         alert ("Complete el genero")}
     else {
-        
+        localStorage.setItem(nombre)
+        .boton.style.display = "none"
     }
 
     console.log("ok");
