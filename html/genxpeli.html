@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/uikit.min.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/home.css">
+      <link rel="stylesheet" href="../css/barraDeNavegacion.css">
 
   </head>
 
@@ -22,10 +23,6 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="">
-                <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Log in</button>
-
               </li>
 
               <li class="nav-item dropdown">
@@ -54,6 +51,11 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="generos.html">Peliculas de Television</a> -->
               </li>
+              <li class="">
+                <button class="uk-button uk-button-default uk-margin-small-right boton" type="button" uk-toggle="target: #modal-example">Log in</button>
+
+              </li>
+
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
@@ -84,7 +86,7 @@
             <!-- ACA TERMINA EL NAV -->
 
             <div id="modal-example" uk-modal>
-              <div class="uk-modal-dialog uk-modal-body">
+              <div class="uk-modal-dialog uk-modal-body boton">
                   <h2 class="uk-modal-title">LOG IN</h2>
                   <form class="form.uk-flex.uk-flex-column" action="" method="post">
                   <input type="text" name="name" value="" placeholder="Nombre">
