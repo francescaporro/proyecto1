@@ -22,24 +22,9 @@ window.addEventListener ("load",function(){
     event.preventDefault ()
     alert ("Complete el genero")}
     else {
-<<<<<<< HEAD
         localStorage.setItem(nombre)
         .boton.style.display = "none"
-=======
-      
->>>>>>> master
     }
 }
 
 })
-
-
-
-
-
-
-
-
-
-
-if
