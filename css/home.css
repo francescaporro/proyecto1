@@ -39,6 +39,19 @@ body {
     color: yellow;
 }
 
+footer{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer img{
+  max-width: 100px;
+}
+
+footer p{
+  font-size: 10px;
+}
 
 
 
