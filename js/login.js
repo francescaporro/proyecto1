@@ -1,3 +1,5 @@
+//localStorage.removeItem("nombre")
+
 window.addEventListener ("load",function(){
   var formulario = document.querySelector(".formularioLogin")
   var nombre = formulario.querySelector("input[name='nombre']")
