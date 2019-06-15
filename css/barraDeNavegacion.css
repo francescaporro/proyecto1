@@ -11,7 +11,7 @@ body{
   width: 100%;
   border-bottom: 1px solid black;
   position: fixed;
-  background-color: white;
+color: white;
   position: fixed;
 }
 
@@ -42,5 +42,11 @@ body{
 list-style-type: none;
 }
 .navegacion:hover {
-  color: yellow;
+  color: white;
+}
+#item-usuario {
+  color: white;
+font-family: sans-serif;
+margin-top: 10px;
+font-size: 18px;
 }
