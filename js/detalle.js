@@ -29,17 +29,27 @@ window.addEventListener("load", function(){
         objetoLiteralRespuesta.genres[i]
         li +=   "<p><a href='genxpeli.html?id="+objetoLiteralRespuesta.genres[i].id+"&nombre="+objetoLiteralRespuesta.genres[i].name+"'>"+objetoLiteralRespuesta.genres[i].name+"</a></p>"
       }
-
-
-
       li += "</li>"
 
-      var trailer = objetoLiteralRespuesta.key
-      console.log(trailer);
-      var urlTrailer = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + trailer + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-      ul.innerHTML += li
-      ul.innerHTML += urlTrailer
+      var url = "https://api.themoviedb.org/3/movie/"+idPelicula+"/videos?api_key=55e95e0127dd3fb1d9735ac5b1829c94&language=en-US"
+      fetch(url)
+        .then(function(response){
+          return response.json();
+        })
+        .then(function(objetoLiteralRespuesta) {
+          console.log(objetoLiteralRespuesta);
+          console.log(objetoLiteralRespuesta.results[0].key);
+          var urlTrailer = '<div><iframe width="560" height="315" src="https://www.youtube.com/embed/' + objetoLiteralRespuesta.results[0].key + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+          ul.innerHTML += li
+          ul.innerHTML += urlTrailer
+        })
+        .catch(function(error) {
+          console.log("the error was: " + error);
+        })
 
+        document.querySelector(".recomendaciones").onclick= function() {
+          document.querySelector('section ul.recomendaciones').classList.toggle('display-none')
+        }
     })
     .catch(function(error) {
       console.log("the error was: " + error);
@@ -86,16 +96,11 @@ window.addEventListener("load", function(){
         // ul.innerHTML += urlTrailer
       }
 
-      })
-      .catch(function(error) {
-        console.log("the error was: " + error);
-      })
 
-
-      document.querySelector(".recomendaciones").onclick= function() {
-        document.querySelector('section ul.recomendaciones').classList.toggle('display-none')
-      }
-
+    })
+    .catch(function(error) {
+      console.log("the error was: " + error);
+    })
 
 // var url = "https://api.themoviedb.org/3/movie/" + idPelicula + "/videos?api_key=55e95e0127dd3fb1d9735ac5b1829c94&language=en-US"
 // var urlTrailer = ""
@@ -107,4 +112,7 @@ window.addEventListener("load", function(){
 //   .then(function(peli) {
 //
 //   })
+
+
+
 })
