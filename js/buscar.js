@@ -14,7 +14,7 @@ console.log(buscado);
 
     for (var i = 0; i < peliculas.length; i++) {
 
-      document.querySelector("main ul.buscado").innerHTML += '<li> <a href="detalleDeUnaPelicula.html">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
+      document.querySelector("main ul.buscado").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+peliculas[i].id+'">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
     }
 
 

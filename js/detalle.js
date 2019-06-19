@@ -25,7 +25,7 @@ window.addEventListener("load", function(){
       li +=   "<p>"+ "Idioma:  " +objetoLiteralRespuesta.original_language+"</p>"
       li +=   "<p>"+ "Popularidad:  " +objetoLiteralRespuesta.popularity+"</p>"
       li +=   "<p>"+ "Fecha de estreno:  " + objetoLiteralRespuesta.release_date+"</p>"
-      
+
 
       li += "</li>"
 
@@ -35,5 +35,4 @@ window.addEventListener("load", function(){
     .catch(function(error) {
       console.log("the error was: " + error);
     })
-
 })
