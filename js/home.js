@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
       for (var i = 0; i < peliculas.length; i++) {
 
 
-        document.querySelector(".destacadas").innerHTML += '<li> <a href="detalleDeUnaPelicula.html">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
+        document.querySelector(".destacadas").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+peliculas[i].id+'">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
       }
     })
 
@@ -25,7 +25,7 @@ window.addEventListener("load", function() {
 
       for (var i = 0; i < peliculas.length; i++) {
 
-        document.querySelector(".proximamente").innerHTML += '<li> <a href="detalleDeUnaPelicula.html">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
+        document.querySelector(".proximamente").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+peliculas[i].id+'">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
       }
     })
 
@@ -38,7 +38,7 @@ window.addEventListener("load", function() {
 
       for (var i = 0; i < peliculas.length; i++) {
 
-        document.querySelector(".puntaje").innerHTML += '<li> <a href="detalleDeUnaPelicula.html">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
+        document.querySelector(".puntaje").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+peliculas[i].id+'">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
       }
     })
 

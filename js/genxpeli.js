@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
     for (var i = 0; i < peliculas.length; i++) {
       console.log(peliculas[i]);
 
-      document.querySelector("#peliculasGenero").innerHTML += '<li> <a href="detalleDeUnaPelicula.html">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
+      document.querySelector("#peliculasGenero").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+peliculas[i].id+'">   <img src="https://image.tmdb.org/t/p/original' + peliculas[i].poster_path + '" alt=""></a></li>'
 
     }
   })
