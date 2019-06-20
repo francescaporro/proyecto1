@@ -78,16 +78,16 @@ window.addEventListener("load", function(){
         console.log(objetoLiteralRespuesta.results[1].title);
         var li = ""
         for (var i = 0; i < objetoLiteralRespuesta.results.length; i++) {
-
-        li = "<li>"
-        li +=   "<p>"+ "Titulo:  "+objetoLiteralRespuesta.results[i].title+"</p>"
+        //
+        // li = "<li>"
+        // li +=   "<p>"+ "Titulo:  "+objetoLiteralRespuesta.results[i].title+"</p>"
         li +=   "<img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+"' style='width:300px;'>"
-        li +=   "<p>"+ "Sinopsis:  "+objetoLiteralRespuesta.results[i].overview+"</p>"
-        li +=   "<p>"+ "Idioma:  " +objetoLiteralRespuesta.results[i].original_language+"</p>"
-        li +=   "<p>"+ "Popularidad:  " +objetoLiteralRespuesta.results[i].popularity+"</p>"
-        li +=   "<p>"+ "Fecha de estreno:  " + objetoLiteralRespuesta.results[i].release_date+"</p>"
+        // li +=   "<p>"+ "Sinopsis:  "+objetoLiteralRespuesta.results[i].overview+"</p>"
+        // li +=   "<p>"+ "Idioma:  " +objetoLiteralRespuesta.results[i].original_language+"</p>"
+        // li +=   "<p>"+ "Popularidad:  " +objetoLiteralRespuesta.results[i].popularity+"</p>"
+        // li +=   "<p>"+ "Fecha de estreno:  " + objetoLiteralRespuesta.results[i].release_date+"</p>"
 
-        li += "</li>"
+        // li += "</li>"
         //
         // var trailer = objetoLiteralRespuesta.key
         // console.log(trailer);
