@@ -78,21 +78,23 @@ window.addEventListener("load", function(){
         console.log(objetoLiteralRespuesta.results[1].title);
         var li = ""
         for (var i = 0; i < objetoLiteralRespuesta.results.length; i++) {
+          // li="<li>"
+      //  document.querySelector(".recomendaciones").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+urlImg + objetoLiteralRespuesta.results[i].poster_path.id+'"> <img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+" style='width:300px;'> </a> </li>'
         //
-        // li = "<li>"
+      //   li = "<li>"
         // li +=   "<p>"+ "Titulo:  "+objetoLiteralRespuesta.results[i].title+"</p>"
-        li +=   "<img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+"' style='width:300px;'>"
+    li +=   "<img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+"' style='width:300px;'>"
         // li +=   "<p>"+ "Sinopsis:  "+objetoLiteralRespuesta.results[i].overview+"</p>"
         // li +=   "<p>"+ "Idioma:  " +objetoLiteralRespuesta.results[i].original_language+"</p>"
         // li +=   "<p>"+ "Popularidad:  " +objetoLiteralRespuesta.results[i].popularity+"</p>"
         // li +=   "<p>"+ "Fecha de estreno:  " + objetoLiteralRespuesta.results[i].release_date+"</p>"
 
-        // li += "</li>"
+         // li += "</li>"
         //
         // var trailer = objetoLiteralRespuesta.key
         // console.log(trailer);
         // var urlTrailer = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + trailer + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-        ul.innerHTML += li
+     ul.innerHTML += li
         // ul.innerHTML += urlTrailer
       }
 

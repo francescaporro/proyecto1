@@ -43,25 +43,27 @@ footer{
   display: flex;
   justify-content: space-around;
   width: 100%;
+
 }
 
 footer img{
-  max-width: 100px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 footer p{
   font-size: 10px;
 }
 
+/* Log Out */
 
+/* Log Out */
 
-/*NO FUNCIONA EL HOME.CSS PQ HAY ALGO QUE LO PISA /*
+@media only screen (min-width: 200px) and (max-width: 810px){
 
-/* Misterio
-Romance
-Ciencia Ficcion
-Misterio
-Terror
-War
+#cartelera h1{
+  text-align: center;
+  font-size: 2000px;
+}
 
-Thriller */
+}

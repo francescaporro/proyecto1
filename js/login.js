@@ -31,10 +31,26 @@ window.addEventListener ("load",function(){
 }
 var usuario = localStorage.getItem("nombre")
 console.log(usuario);
+
 if (usuario != null) {
   document.getElementById("voton").style.display="none"
   document.getElementById("item-usuario").innerHTML = "<p>"+usuario+"</p>"
+  document.getElementById("favourite").style.display="block"
 }
 
+// var desloguear = document.getElementById('logout')  // Creo una variable que se llama desloguear y agarra el boton de logout
+//
+// desloguear.addEventListener('click', function(){ //Cuando alguien clickea desloguear pasa lo siguiente...
+//  localStorage.removeItem('nombre') // Remueve nombre del Local Storage, es como lo que esta arriba de todo que descomentan
+//  document.getElementById('logout').style.display = 'none' //Hace que el logout no se vea mas
+//  document.getElementById("item-usuario").style.display='none' // Hace que el nombre de la persona desaparezca
+//  document.getElementById("favourite").style.display="none" // El link de favoritos desaparece
+//  document.getElementById("voton").style.display="block" // ESTE ES EL BOTON DE LOG IN QUE DEBERIA APARECER!!!!!!!!!!!!!!!
+// })
+//
+//  var submit = document.getElementById('submit') // Una variable submit
+//  submit.addEventListener('click',function(){ // Cuando se apreta en submit...
+//      document.getElementById('modal-example').style.display='none' // Desaparece todo el formulario
+//    })
 
 })
