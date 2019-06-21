@@ -47,7 +47,7 @@ window.addEventListener("load", function(){
           console.log("the error was: " + error);
         })
 
-        document.querySelector(".recomendaciones").onclick= function() {
+        document.querySelector(".botom").onclick= function() {
           document.querySelector('section ul.recomendaciones').classList.toggle('display-none')
         }
     })
@@ -79,11 +79,10 @@ window.addEventListener("load", function(){
         var li = ""
         for (var i = 0; i < objetoLiteralRespuesta.results.length; i++) {
           // li="<li>"
-      //  document.querySelector(".recomendaciones").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+urlImg + objetoLiteralRespuesta.results[i].poster_path.id+'"> <img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+" style='width:300px;'> </a> </li>'
-        //
+    document.querySelector(".recomendaciones").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+urlImg + objetoLiteralRespuesta.results[i].poster_path.id+'"> <img src="'+urlImg + objetoLiteralRespuesta.results[i].poster_path+'" style="width:300px;"> </a> </li>'
       //   li = "<li>"
         // li +=   "<p>"+ "Titulo:  "+objetoLiteralRespuesta.results[i].title+"</p>"
-    li +=   "<img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+"' style='width:300px;'>"
+    // li +=   "<img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+"' style='width:300px;'>"
         // li +=   "<p>"+ "Sinopsis:  "+objetoLiteralRespuesta.results[i].overview+"</p>"
         // li +=   "<p>"+ "Idioma:  " +objetoLiteralRespuesta.results[i].original_language+"</p>"
         // li +=   "<p>"+ "Popularidad:  " +objetoLiteralRespuesta.results[i].popularity+"</p>"

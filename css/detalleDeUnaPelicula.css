@@ -3,7 +3,22 @@
 }
 body {
   background-color: black;
-  color: yellow;
+  color: white;
+  list-style-type: none;
+  font-weight: lighter;
+  font-family: sans-serif;
+
 
   height:100%;
 }
+
+ul {
+  list-style-type: none;
+}
+
+
+/* Telefono */
+@media (min-width: 421px) and (max-width: 810px){
+	li {
+		color: yellow;
+	}

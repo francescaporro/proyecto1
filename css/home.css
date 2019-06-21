@@ -7,36 +7,44 @@ body {
 
 .home{
   background-color: black;
-  color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 
 .cartelera{
   background-color: black;
-  color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 
 .proximamente{
   background-color: black;
-  color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 
 .puntaje{
   background-color: black;
-  color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 
 #destacadas{
-  color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 #proximamente{
-    color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 #mayorPuntaje{
-    color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 
 #cartelera{
-    color: yellow;
+  color: white;
+  font-weight: lighter;
 }
 
 footer{

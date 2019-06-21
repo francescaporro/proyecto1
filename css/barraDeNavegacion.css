@@ -46,6 +46,7 @@ list-style-type: none;
 }
 #item-usuario {
   color: white;
+  font-weight: lighter;
 font-family: sans-serif;
 margin-top: 10px;
 font-size: 18px;

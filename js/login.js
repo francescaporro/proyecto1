@@ -1,4 +1,4 @@
-//localStorage.removeItem("nombre")
+// localStorage.removeItem("nombre")
 
 window.addEventListener ("load",function(){
   var formulario = document.querySelector(".formularioLogin")

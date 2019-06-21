@@ -1,63 +1,95 @@
-window.addEventListener("load", function() {
+// IDEA: pelis favs
 
-  idPelicula = new URLSearchParams(location.search).get("idPelicula")
+// IDEA: BLOQUE 1
 
-  // INICIO BLOQUE 1 - Leer el array de storage
+// Obtengo la info de local storage
+var json = localStorage.getItem("pelisPrefes")
 
-    // Paso 1 - Leo de localStorage
-    var jsonFavoritas = localStorage.getItem("peliculasFavoritas")
+// Si ya habia favoritos..
+if (json != null) {
+  // Desempaquetar el string JSON
+  var objLit = JSON.parse(json)
 
-    if (jsonFavoritas == null) {
-      var favoritas = []
-    } else {
-      // Paso 2 - Desempaqueto el json
-      var objLit = JSON.parse(jsonFavoritas)
+  // De todo el objeto literal me interesa EL ARRAY
+  var favoritos = objLit.carac
 
-      // Paso 3 - Leo del obj lit, la caracteristica importante
-      var favoritas = objLit.caracteristica;
-    }
-  // CIERRA BLOQUE 1
+}
+else {
+  // Si no habia creo el listado como VACIO
+  var favoritos = []
+}
 
-  fetch("URLDETALLE" + idPelicula)
-    .then(function(data) {
-      return data.json()
-    })
-    .then(function(dataPeli) {
-      // HACEN COSAS PARA MOSTRAR EL DETALLE
+// IDEA: BLOQUE 2
 
-      // Inicio bloque 2 - Si la peli ya era favorita que aparezca ya pintada la estrella
-      if (favoritas.indexOf(idPelicula) >= 0) {
-        PONER LA ESTRELLA YA PINTADA
-      }
-      // Fin bloque 2
+if (favoritos.indexOf(id) != -1) {
 
-    })
 
-    // Bloque 3 - Que pasa al clickear en la estrella
-    document.querySelector("ESTRELLA").onclick = function() {
-      // Bloque 3 a - Modifico el array
-      if (favoritas.indexOf(idPelicula) >= 0) {
-        // La quito
-        var pos = favoritas.indexOf(idPelicula)
-        favoritas.splice(pos,1)
-        DESPINTAR LA ESTRELLA
-      } else {
-        // La agrego
-        favoritas.push(idPelicula)
-        PINTAR LA ESTRELLA
-      }
-      // Fin bloque 3 a
+    document.querySelector("img.corazonVacio").style.display = "none";
+    document.querySelector("img.corazonLleno").style.display="block";
 
-      // Bloque 3 b
-        var objLit = {
-          caracteristica: favoritas
-        }
+}
 
-        var json = JSON.stringify(objLit)
+document.querySelector("img.corazonVacio").onclick = function() {
+  // IDEA: BLOQUE 3
 
-        localStorage.setItem("peliculasFavoritas", json)
-      // Fin bloque 3 b
-    }
-    // Fin bloque 3
+    favoritos.push(id)
+
+
+  // IDEA: BLOQUE 4
+
+  // Lo vuelvo a pasar a OBJ literal
+
+  obj = {
+    carac: favoritos
+  }
+
+  // LO transformo en JSON
+  json = JSON.stringify(obj)
+
+  // Lo guardo en Local Storage
+  localStorage.setItem("pelisPrefes", json)
+
+  document.querySelector("img.corazonVacio").style.display = "none";
+  document.querySelector("img.corazonLleno").style.display="block";
+}
+
+document.querySelector("img.corazonLleno").onclick = function() {
+  // IDEA: BLOQUE 3
+
+
+    // La quita
+    var posicion = favoritos.indexOf(id)
+    favoritos.splice(posicion,1)
+
+
+  // IDEA: BLOQUE 4
+
+  // Lo vuelvo a pasar a OBJ literal
+
+  obj = {
+    carac: favoritos
+  }
+
+  // LO transformo en JSON
+  json = JSON.stringify(obj)
+
+  // Lo guardo en Local Storage
+  localStorage.setItem("pelisPrefes", json)
+
+  document.querySelector("img.corazonVacio").style.display = "block";
+  document.querySelector("img.corazonLleno").style.display="none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 })
