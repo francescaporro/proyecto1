@@ -79,7 +79,7 @@ window.addEventListener("load", function(){
         var li = ""
         for (var i = 0; i < objetoLiteralRespuesta.results.length; i++) {
           // li="<li>"
-    document.querySelector(".recomendaciones").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+urlImg + objetoLiteralRespuesta.results[i].poster_path.id+'"> <img src="'+urlImg + objetoLiteralRespuesta.results[i].poster_path+'" style="width:300px;"> </a> </li>'
+    document.querySelector(".recomendaciones").innerHTML += '<li> <a href="detalleDeUnaPelicula.html?idPelicula='+ objetoLiteralRespuesta.results[i].id+'"> <img src="'+urlImg + objetoLiteralRespuesta.results[i].poster_path+'" style="width:300px;"> </a> </li>'
       //   li = "<li>"
         // li +=   "<p>"+ "Titulo:  "+objetoLiteralRespuesta.results[i].title+"</p>"
     // li +=   "<img src='"+urlImg + objetoLiteralRespuesta.results[i].poster_path+"' style='width:300px;'>"
